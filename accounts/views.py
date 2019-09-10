@@ -31,7 +31,7 @@ def login(request):
     
             if user:
                 auth.login(user=user, request=request)
-                messages.success(request, "You have now logged in!")
+                messages.success(request, "")
                 return redirect(reverse('index'))
             else:
                 login_form.add_error(None, "Username or password is not correct")
