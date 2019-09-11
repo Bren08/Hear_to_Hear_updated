@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Hearing_aid
+from .models import Aid
 
 # Register your models here.
-admin.site.register(Hearing_aid)
+admin.site.register(Aid)
