@@ -1,4 +1,4 @@
-# Django Login/Logout/Registration app
+# A hearing aid e-commerce website where you can purchase your next hearing aid.
 
 A simple login/logout/registration app with authorisation, written using Django
 
