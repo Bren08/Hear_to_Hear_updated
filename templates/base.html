@@ -64,8 +64,8 @@
     <div class="container">
         <div class="display text-center">
             <form action="{% url 'search' %}" id="search" method="GET">
-                <input type="text" id="search-btn" name="q">
-                <button type="search" id="search-btn">Search Brands</button>
+                <input type="text" class="search-btn" name="q">
+                <button type="search" class="search-btn">Search Brands</button>
             </form>
         </div>
         {% block content %} {% endblock %}
