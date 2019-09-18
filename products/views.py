@@ -6,3 +6,5 @@ from .models import Aid
 def all_products(request):
     products = Aid.objects.all()
     return render(request, "products.html", {"products": products})
+
+
