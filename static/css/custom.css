@@ -43,7 +43,7 @@ a.navbar-brand {
     border-radius: 5px;
 }
 
-#search-btn {
+.search-btn {
     border-radius: 5px;
     margin-left: 20px;
     background-color: #b6cedc;
@@ -81,8 +81,27 @@ footer {
     background-color: #fff;
 }
 
-.accountform {
+form.accountform {
     padding-top: 20px;
+    margin: 50%;
+}
+
+input#id_new_password1 {
+    margin-bottom: 40px;
+}
+
+input#id_new_password2 {
+    margin-top: 20px;
+}
+
+#new_password1 {
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+#new_password2 {
+    margin-top: 25px;
+    padding: 5px;
 }
 
 /* Cart icon info & colour for different browsers */
