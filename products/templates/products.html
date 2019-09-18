@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+
 {% block content %}
-<div class="row row-flex">
+<div class="row row-flex text-center">
     {% for product in products %}
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
         <div class="panel-body">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
-            <h3>{{ product.brand }}</h3>
+            <h3><a href="{% url 'products' %}">{{ product.brand }}</a></h3>
             <h4>{{ product.model_type }}</h4>
             <p class="product-description">{{ product.description }}</p>
             <p><span class="glyphicon glyphicon-euro" aria-hidden="true"></span> {{ product.price }}</p>
