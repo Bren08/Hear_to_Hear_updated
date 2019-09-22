@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica;
     padding-top: 40px;
+    background-color: #b3c2c55c;
 }
 
 .container {
@@ -12,8 +13,15 @@ h1 {
     font-size: 64px;
 }
 
+.page-title {
+    margin-top: 60px;
+    font-size: 40px;
+    color: black;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 a {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 a#product-link {
@@ -21,19 +29,32 @@ a#product-link {
 }
 
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Navigation bar */
 
-
+.navbar-collapse, .navbar-header {
+    background-color: #19363e;
+}
 
 .navbar-nav>li>a {
-    padding-right: 40px;
+    padding-right: 60px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color:#19363e;
+    border-color: #19363e;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #649cbc33;
 }
 
 a.navbar-brand {
     font-size: 22px;
+    padding-top: 15px;
+    padding-right: 250px;
 }
 
 /* Search area */
@@ -41,6 +62,11 @@ a.navbar-brand {
 #search {
     width: 100%;
     border-radius: 5px;
+    display: contents;
+}
+
+form#search {
+    text-align: -webkit-center;
 }
 
 .search-btn {
@@ -48,7 +74,15 @@ a.navbar-brand {
     margin-left: 20px;
     background-color: #b6cedc;
     font-size: 18px;
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: #b6cedc;
+    font-size: 18px;
 }
 
 input#id_email {
@@ -64,9 +98,17 @@ form {
     margin: 50px;
 }
 
+.quantity-input {
+    width: auto;
+}
+
 .btn-primary {
     margin-top: 20px;
     font-size: 18px;
+}
+
+.btn-warning, .btn-danger, .btn-success {
+    border-radius: 5px!important;
 }
 
 footer {
@@ -83,7 +125,7 @@ footer {
 
 form.accountform {
     padding-top: 20px;
-    margin: 50%;
+    margin-top: 200px;
 }
 
 input#id_new_password1 {
@@ -148,14 +190,20 @@ caption p {
 
 /* Custom Bootstrap */
 
+.panel {
+    margin-bottom: 20px;
+    background-color: #b6cedc;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    border-color: #dddddd;
+}
+
 .panel-default {
-    border-color: transparent;
-    padding: 0 10px;
+    border-color: #dddddd;
 }
 
 .panel-body {
     height: 100%;
-    border: 1px solid #ddd;
 }
 
 /* landing page */
@@ -192,4 +240,35 @@ caption p {
   
   .brand-text {
     color: white;
+  }
+
+  /* Media Queries */
+  /* extra small devices */
+  @media only screen and (max-width: 768px) {
+    a {
+        font-size: 14px;
+    }
+  }
+  /* small devices/large phones/tablets */
+  @media only screen and (max-width: 768px) {
+    a {
+        font-size: 14px;
+    }
+    .search-btn {
+        font-size: 10px;
+    }
+    a.navbar-brand{
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+
+  }
+  /* medium devices 768px and up */
+  @media only screen and (min-width: 768px) {
+    
+  }
+  /* large devices laptops/desktops 992px and up */
+  @media only screen and (min-width: 992px) {
+
   }
