@@ -1,6 +1,6 @@
-from django.conf.urls import url, include
-from .views import all_extras
+from django.conf.urls import url
+from .views import all_accessories
 
 urlpatterns = [
-    url(r'^$', all_extras, name='extras'),
+    url(r'^$', all_accessories, name='accessories'),
 ]
