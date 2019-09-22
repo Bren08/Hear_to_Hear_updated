@@ -1,0 +1,274 @@
+body {
+    font-family: Helvetica;
+    padding-top: 40px;
+    background-color: #b3c2c55c;
+}
+
+.container {
+    width: 100%;
+    text-align: -webkit-center;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+.page-title {
+    margin-top: 60px;
+    font-size: 40px;
+    color: black;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    font-size: 18px;
+}
+
+a#product-link {
+    font-size: 16px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Navigation bar */
+
+.navbar-collapse, .navbar-header {
+    background-color: #19363e;
+}
+
+.navbar-nav>li>a {
+    padding-right: 60px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color:#19363e;
+    border-color: #19363e;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: #649cbc33;
+}
+
+a.navbar-brand {
+    font-size: 22px;
+    padding-top: 15px;
+    padding-right: 250px;
+}
+
+/* Search area */
+
+#search {
+    width: 100%;
+    border-radius: 5px;
+    display: contents;
+}
+
+form#search {
+    text-align: -webkit-center;
+}
+
+.search-btn {
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: #b6cedc;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: #b6cedc;
+    font-size: 18px;
+}
+
+input#id_email {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Form control */
+
+form {
+    width: 50%;
+    text-align: center;
+    margin: 50px;
+}
+
+.quantity-input {
+    width: auto;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.btn-warning, .btn-danger, .btn-success {
+    border-radius: 5px!important;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #ededed;
+    color: #A9A9A9;
+}
+
+.icon-bar {
+    background-color: #fff;
+}
+
+form.accountform {
+    padding-top: 20px;
+    margin-top: 200px;
+}
+
+input#id_new_password1 {
+    margin-bottom: 40px;
+}
+
+input#id_new_password2 {
+    margin-top: 20px;
+}
+
+#new_password1 {
+    margin-bottom: 40px;
+    margin-left: 35px;
+}
+
+#new_password2 {
+    margin-top: 25px;
+    padding: 5px;
+}
+
+/* Cart icon info & colour for different browsers */
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+    background-color: #c67605;
+}
+
+/* Product image */
+
+.product {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+/* Product description */
+
+caption p {
+    word-wrap: break-word;
+}
+
+.row.row-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-description {
+    min-height: 40px;
+}
+
+/* Custom Bootstrap */
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #b6cedc;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    border-color: #dddddd;
+}
+
+.panel-default {
+    border-color: #dddddd;
+}
+
+.panel-body {
+    height: 100%;
+}
+
+/* landing page */
+
+.landing-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } 
+
+.landing-main { 
+    background: url(http://ethicalmarketingnews.com/wp-content/uploads/2018/03/signiahearingaid.jpg) no-repeat center center fixed; 
+    background-size: cover;
+  }
+
+  .landing-section-content {
+    padding: 2rem;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ccc;
+  }
+  
+  .brand {
+    margin: 0;
+    color: white;
+  }
+  
+  .brand-text {
+    color: white;
+  }
+
+  /* Media Queries */
+  /* extra small devices */
+  @media only screen and (max-width: 768px) {
+    a {
+        font-size: 14px;
+    }
+  }
+  /* small devices/large phones/tablets */
+  @media only screen and (max-width: 768px) {
+    a {
+        font-size: 14px;
+    }
+    .search-btn {
+        font-size: 10px;
+    }
+    a.navbar-brand{
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+
+  }
+  /* medium devices 768px and up */
+  @media only screen and (min-width: 768px) {
+    
+  }
+  /* large devices laptops/desktops 992px and up */
+  @media only screen and (min-width: 992px) {
+
+  }
