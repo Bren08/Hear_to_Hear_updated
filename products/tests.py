@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Hearing_aid
+from .models import Aid
 
 # Create your tests here.
 class ProductTests(TestCase):
@@ -9,5 +9,5 @@ class ProductTests(TestCase):
     """
 
     def test_str(self):
-        test_name = Hearing_aid(name='A hearing_aid')
+        test_name = Aid(name='A hearing_aid')
         self.assertEqual(str(test_name), 'A hearing_aid')
