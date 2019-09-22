@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load bootstrap_tags %}
+
+{% block content %}
+
+<h2 class="page-title">Contact Us </h2><br>
+<p>Email us with any questions or queries and we will be only happy to assist you.</p>
+<form action="" method="POST">
+
+    {% csrf_token %}
+
+    {{ form | as_bootstrap }}
+    <button type="submit" class="btn btn-primary">Send </button>
+</form>
+
+{% endblock %}

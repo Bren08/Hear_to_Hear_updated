@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% load bootstrap_tags %}
+
+{% block content %}
+
+<h2 class="page-title">Accessories</h2><br>
+<div class="row row-flex text-center">
+
+    {% for accessories in accessory %}
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+        <div class="panel-body">
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ accessories.image }}')"></div>
+            <h3>{{ accessories.name }}</h3>
+            <p class="product-description">{{ accessories.description }}</p>
+            <p>Price: <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> {{ accessories.price }}</p>
+            <form method="post" class="quantity-input" action="{% url 'add_to_cart' accessories.id  %}">
+
+                {% csrf_token %}
+
+                <div class="input-group">
+                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="submit">Add</button>
+                    </span>
+                </div><br>
+            </form>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

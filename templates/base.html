@@ -15,11 +15,13 @@
 
     {% block head_js %}
     {% endblock %}
+
 </head>
+
+<!-- Navigation -->
 
 <body>
     <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
-        
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
                 aria-expanded="false" aria-controls="navbar">
@@ -28,30 +30,37 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{% url 'home' %}">Hear to Hear</a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Hear to
+                Hear</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-center">
+                <form action="{% url 'search' %}" id="search" method="GET">
+                    <input type="text" class="search-btn" name="q" placeholder="Search Brands">
+                    <button type="search" class="search-btn">Submit</button>
+                </form>
                 <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'products' %}">Products</a></li>
+                <li><a href="{% url 'products' %}">Hearing Aids</a></li>
                 {% if user.is_authenticated %}
                 <li><a href="{% url 'logout' %}">Log Out</a></li>
                 {%  else %}
                 <li><a href="{% url 'registration' %}">Register</a></li>
                 <li><a href="{% url 'login' %}">Log In</a></li>
                 {% endif %}
-                <li><a href="/">Accessories</a></li>
+                <li><a href="{% url 'accessories' %}">Accessories</a></li>
                 <li>
-                <a href="{% url 'view_cart' %}">
-                    <i class="fa fa-shipping-cart"></i>Cart
-                    {% if product_count > 0 %}
-                    <label class="badge badge-warning">{{ product_count }}</label>
-                    {% endif %}
-                </a>
-                </li>
+                    <a href="{% url 'view_cart' %}">
+                        <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Cart
+                        {% if product_count > 0 %}
+                        <label class="badge badge-warning">{{ product_count }}</label>
+                        {% endif %}
+                    </a></li>
             </ul>
         </div>
     </nav>
+
+    <!-- End user message alerts -->
+
     {% if messages %}
     <div class="alert alert-success">
         <div class="messages">
@@ -63,13 +72,12 @@
     {% endif %}
     <div class="container">
         <div class="display text-center">
-            <form action="{% url 'search' %}" id="search" method="GET">
-                <input type="text" class="search-btn" name="q">
-                <button type="search" class="search-btn">Search Brands</button>
-            </form>
         </div>
         {% block content %} {% endblock %}
     </div>
+
+    <!-- Footer -->
+
     <footer>
         <div class="container text-center">
             <p>By: Brendan O Brien - Milestone Project 4 </p>

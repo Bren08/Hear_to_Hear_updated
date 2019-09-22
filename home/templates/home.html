@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<section class="landing-section landing-main">
+<div class="container  img-responsive block-center">
+  <section class="landing-section landing-main">
     <div class="landing-section-content">
       <h1 class="brand">Hear to Hear</h1>
       <h2>
@@ -9,9 +10,10 @@
         <span class="brand-text">We are here to help you regain the sounds that you may have lost.</span>
       </h2>
       <p class="landing-main-text">
-        We stock all the leading brands from, Signia, Widex, Phonak, Starkey and many more, click <a href="{% url 'products' %}" id="product-link"> here</a> to see some of our available products.</a>
+        We stock all the leading brands from, Signia, Widex, Phonak, Starkey and many more, click <a
+          href="{% url 'products' %}" id="product-link"> here</a> to see some of our available products.</a>
       </p>
     </div>
   </section>
-  
-  {% endblock %}
+</div>
+{% endblock %}
