@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404
 from products.models import Aid
 
 
+
 def cart_contents(request):
     """
     Ensures that the cart contents are available when rendering
@@ -12,7 +13,6 @@ def cart_contents(request):
     cart_items = []
     total = 0
     product_count = 0
-    
     for id, quantity in cart.items():
         product = get_object_or_404(Aid, pk=id)
         total += quantity * product.price
