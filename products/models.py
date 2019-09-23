@@ -13,7 +13,7 @@ class Aid(models.Model):
         return self.brand
 
 
-class Product(models.Model):
+class Product_Addon(models.Model):
     brand = models.CharField(max_length=254, default='')
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
