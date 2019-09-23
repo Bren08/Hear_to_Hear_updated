@@ -1,4 +1,4 @@
-"""hear_today URL Configuration
+"""hear_to_hear URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -17,7 +17,6 @@ from django.conf.urls import url, include
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-#from accounts.views import index
 from home import urls as urls_home
 from accounts import urls as urls_accounts
 from products import urls as urls_products

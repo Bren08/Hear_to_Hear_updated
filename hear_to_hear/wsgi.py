@@ -1,5 +1,5 @@
 """
-WSGI config for hear_today project.
+WSGI config for hear_to_hear project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hear_today.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hear_to_hear.settings")
 
 application = get_wsgi_application()
