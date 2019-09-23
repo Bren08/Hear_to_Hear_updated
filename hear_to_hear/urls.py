@@ -20,12 +20,13 @@ from django.contrib.auth import views as auth_views
 from home import urls as urls_home
 from accounts import urls as urls_accounts
 from products import urls as urls_products
-from accessories import urls as urls_accessories
+from products import urls as urls_addons
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
 from contact import urls as urls_contact
 from products.views import all_products
+from products.views import all_addons
 from django.views import static
 from .settings import MEDIA_ROOT
 from django.conf import settings
@@ -36,7 +37,6 @@ urlpatterns = [
     url(r'^home/', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^products/', include(urls_products)),
-    url(r'^accessories/', include(urls_accessories)),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^contact/', include(urls_contact)),
