@@ -1,1 +1,1 @@
-web: gunicorn hear-to-hear.wsgi:application
+web: gunicorn hear_to_hear.wsgi:application
