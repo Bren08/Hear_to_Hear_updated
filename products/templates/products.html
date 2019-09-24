@@ -6,13 +6,72 @@
 
 {% block content %}
 
-<h2 class="page-title">Our Products</h2><br>
-<p>If you would like some more information on any of our products please click <a href="{% url 'contact' %}">here</a> to
-    send us your query.</p>
+<h2 class="page-title">Hearing Aids</h2><br>
+<p class="product-info">If you would like some more information or advice on any of our products please click <a
+        href="{% url 'contact' %}">here</a> to
+    send us your query.</p><br><br>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="features col-xs-6 col-md-4">
+            <h3 class="header-info">Bluetooth Hearing Aids </h3>
+            <p class="paragraph-content">Bluetooth, invented by the Swedish tech giant Ericsson, is synonymous with
+                wireless technology these
+                days, but did you know its name goes all the way back to the 10th century? According to Gizmodo,
+                “Bluetooth technology was named after a Danish king, King Harald Blatand, who had a penchant for
+                snacking on blueberries and was known for uniting warring factions in what is now Denmark, Norway, and
+                Sweden. Uniting devices from different manufacturers with different purposes, like computers from Apple
+                and mice from Microsoft, is what Bluetooth technology is all about – all at a low cost, with low power
+                consumption and a secure connection every time.” In addition to the devices we normally use in our daily
+                life, from laptops to smart phones, we can now add hearing aids to the list! With
+                Bluetooth-compatibility, wearers experience a whole new world of accessibility.
+            </p>
+        </div>
+        <div class="features col-xs-6 col-md-4">
+            <h3 class="header-info">Rechargeable Hearing Aids </h3>
+            <p class="paragraph-content">
+                Rechargeable Hearing Aids
+                Rechargeable Hearing Aid Options
+                For many hearing aid users, frequent battery changes can become cumbersome - especially for those with
+                near-vision or manual dexterity limitations. Aside from the hands-on frustrations, traditional
+                (disposable) hearing aid batteries may run out of energy at inopportune times, bringing your ability to
+                hear and communicate to a complete halt. Rechargeable hearing aids eliminate these hassles. Simply drop
+                your rechargeable hearing aids into a charging station at night, and a full day’s power is ready to go
+                in the morning.</p>
+        </div>
+        <div class="features col-xs-6 col-md-4">
+            <h3 class="header-info">Benefits of Rechargeable: </h3>
+            <ul class="list">
+                <li class="list-item">
+                    Economic - Save money on hundreds (or thousands) of batteries over the lifetime of your hearing
+                    aids.
+                </li>
+                <li class="list-item">
+                    Convenience - No more running to the store to purchase new batteries.
+                </li>
+                <li class="list-item">
+                    Peace of Mind - Your hearing aids will last throughout the day and won’t run out of power during
+                    an
+                    important meeting, family event, etc.
+                </li>
+                <li class="list-item">
+                    Environmental - Don’t throw away hundreds of batteries per year. Some of the rechargeable
+                    batteries (see
+                    below) can even be recycled.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<h2 class="header-info">Our Products</h2>
+
 <div class="row row-flex text-center">
 
     {% for product in products %}
-
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-4 display panel panel-default">
         <div class="panel-body">
             <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
