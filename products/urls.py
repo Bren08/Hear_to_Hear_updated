@@ -4,5 +4,5 @@ from .views import all_addons
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
-    url(r'^$', all_addons, name='addons'),
+    url(r'^addons', all_addons, name='addons'),
 ]

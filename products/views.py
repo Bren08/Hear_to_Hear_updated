@@ -9,5 +9,5 @@ def all_products(request):
     return render(request, "products.html", {"products": products})
 
 def all_addons(request):
-    addons = Product_Addon.object.all()
-    return render(request, "products.html", {"addons": addons})
+    addons = Product_Addon.objects.all()
+    return render(request, "addons.html", {"addons": addons})
