@@ -34,6 +34,7 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', all_products, name='products'),
+    url(r'^addons', all_addons, name='addons'),
     url(r'^home/', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^products/', include(urls_products)),
