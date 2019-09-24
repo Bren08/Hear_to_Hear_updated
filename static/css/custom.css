@@ -205,6 +205,13 @@ caption p {
     font-size: 16px;
 }
 
+.col-xs-4 {
+    border: solid 1px;
+    border-radius: 10px;
+    height: 100vh;
+    background-color: #b6cedc;
+}
+
 /* Custom Bootstrap */
 
 .panel {
