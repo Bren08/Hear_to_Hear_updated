@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% load bootstrap_tags %}
+
+{% block content %}
+
+<h2 class="page-title">Accessories </h2><br>
+<p>If you would like some more information or advice on any of our products please click <a href="{% url 'contact' %}">here</a> to
+    send us your query.</p>
+<div class="row row-flex text-center">
+
+    {% for addon in addons %}
+
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-4 display panel panel-default">
+        <div class="panel-body">
+            <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ addon.image }}')"></div>
+            <h3> {{ addon.brand }} </h3>
+            <h4> {{ addon.model_type }} </h4>
+            <p class="product-description"> {{ addon.description }} </p>
+            <p>Price: <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> {{ addon.price }} </p>
+            <form method="post" class="quantity-input" action="{% url 'add_to_cart' addon.id %}">
+
+                {% csrf_token %}
+
+                <div class="input-group">
+                    <input name="quantity" type="number" min="1" max="999" class="form-control"
+                        placeholder="Must add minimum one item">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="submit">Add</button>
+                    </span>
+                </div><br>
+            </form>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}
