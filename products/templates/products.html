@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<h2 class="page-title">Hearing Aids</h2><br>
+<h2 class="page-title">Hear to Hear</h2><br>
 <p class="product-info">If you would like some more information or advice on any of our products please click <a
         href="{% url 'contact' %}">here</a> to
     send us your query.</p><br><br>
@@ -17,7 +17,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="features col-xs-6 col-md-4">
+        <div class="col-xs-4 col-md-4">
             <h3 class="header-info">Bluetooth Hearing Aids </h3>
             <p class="paragraph-content">Bluetooth, invented by the Swedish tech giant Ericsson, is synonymous with
                 wireless technology these
@@ -31,7 +31,7 @@
                 Bluetooth-compatibility, wearers experience a whole new world of accessibility.
             </p>
         </div>
-        <div class="features col-xs-6 col-md-4">
+        <div class="col-xs-4 col-md-4">
             <h3 class="header-info">Rechargeable Hearing Aids </h3>
             <p class="paragraph-content">
                 Rechargeable Hearing Aids
@@ -43,7 +43,7 @@
                 your rechargeable hearing aids into a charging station at night, and a full day’s power is ready to go
                 in the morning.</p>
         </div>
-        <div class="features col-xs-6 col-md-4">
+        <div class="col-xs-4 col-md-4">
             <h3 class="header-info">Benefits of Rechargeable: </h3>
             <ul class="list">
                 <li class="list-item">
@@ -85,7 +85,7 @@
 
                 <div class="input-group">
                     <input name="quantity" type="number" min="1" max="999" class="form-control"
-                        placeholder="Must add minimum one item">
+                        placeholder="Must add minimum one item" required>
                     <span class="input-group-btn">
                         <button class="btn btn-success" type="submit">Add</button>
                     </span>
