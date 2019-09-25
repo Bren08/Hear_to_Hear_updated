@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True ##Application crashes if set to false
+DEBUG = True ##Application crashes if set to False
 
 ALLOWED_HOSTS = ['hear-to-hear.herokuapp.com', '127.0.0.1']
 
