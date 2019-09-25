@@ -93,6 +93,11 @@ breakpoint() was my friend also throughout this build it came in very handy as a
 
 Most of the testing for this app was done manually. I find as I start building I am constantly testing each feature and intentionally trying to find fault or break the app. I find this a very effective way to test.
 
+Note: 
+DEBUG in settings.py is set to True as when I set it to False the app kept crashing and therefore would not host on Heroku properly.
+Travis is also throwing up 1 error regarding a Ruby file and therefore the build is currently failing.
+
+
 ## Deployment
 
 A live version of the site is here [Hear to Hear](https://hear-to-hear.herokuapp.com)
