@@ -32,6 +32,10 @@ p {
     font-size: 18px;
 }
 
+.email {
+    margin-top: 100px;
+}
+
 .col-xs-4 {
     text-align: left;
 }
