@@ -36,8 +36,13 @@ p {
     margin-top: 100px;
 }
 
+.row {
+    
+}
+
 .col-xs-4 {
     text-align: left;
+    width: 100%;
 }
 /* Navigation bar */
 
@@ -46,7 +51,7 @@ p {
 }
 
 .navbar-nav>li>a {
-    padding-right: 60px;
+    font-size: 14px;
 }
 
 .navbar-default .navbar-toggle {
@@ -58,11 +63,15 @@ p {
     background-color: #649cbc33;
 }
 
-a.navbar-brand {
+.nav-link {
+    font-size: 10px;
+}
+
+/* a.navbar-brand {
     font-size: 22px;
     padding-top: 15px;
     padding-right: 250px;
-}
+} */
 
 /* Search area */
 
@@ -251,31 +260,39 @@ caption p {
 
   /* Media Queries */
   /* extra small devices */
-  @media only screen and (max-width: 768px) {
-    a {
-        font-size: 14px;
+
+  @media (min-width: 991px){
+    a.navbar-brand{
+        font-size: 16px;
+        padding-right: 80px;
     }
   }
   /* small devices/large phones/tablets */
-  @media only screen and (max-width: 768px) {
-    a {
-        font-size: 14px;
-    }
+  @media (max-width: 992px) {
     .search-btn {
-        font-size: 10px;
+        font-size: 8px;
+        margin-top: 15px;
     }
     a.navbar-brand{
         font-size: 16px;
-        padding-right: 0px;
+    }
+    .navbar-nav>li>a {
+        font-size: 12px;
+    }
+    .page-title {
+        margin-top: 80px;
     }
 
 
   }
   /* medium devices 768px and up */
-  @media only screen and (min-width: 768px) {
+  @media (min-width: 768px) {
     
   }
   /* large devices laptops/desktops 992px and up */
-  @media only screen and (min-width: 992px) {
-
+  @media (min-width: 1200px) {
+    .navbar-nav>li>a {
+        font-size: 16px;
+        margin-left: 50px;
+    }
   }
