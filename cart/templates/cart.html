@@ -39,17 +39,16 @@
                             <button class="btn btn-warning" type="submit">Amend Quantity</button>
                         </span>
                     </div>
-                    
                 </form>
                 <form class="form-inline" class="quantity-input" method="post" action="{% url 'adjust_cart' item.id %}">
 
                     {% csrf_token %}
-                
+
                     <input name="quantity" type="hidden" value="0" class="form-control">
                     <div>
                         <span class="input-group-btn ">
-                            <button class="btn btn-success" type="submit">Clear Cart <span class="glyphicon glyphicon-trash"
-                                    aria-hidden="true"></span></button>
+                            <button class="btn btn-success" type="submit">Clear Cart <span
+                                    class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
                         </span>
                     </div>
                 </form>
